@@ -40,6 +40,8 @@ gulp.task('bundle:js', $.watchify(function(watchify) {
       basedir: './',
       watch: false,
       debug: config.isProd,
+      detectGlobals: false,
+      builtins: [],
       transform: [
         ['babelify', {
           'presets': ['stage-0','es2015'],
