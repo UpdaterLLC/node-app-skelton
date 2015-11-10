@@ -2,6 +2,7 @@
   "name": "node-app-skelton",
   "version": "1.0.0",
   "description": "simple node.js application skelton",
+  "repository": "https://github.com/UpdaterLLC/node-app-skelton",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
