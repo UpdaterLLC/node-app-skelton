@@ -1,5 +1,5 @@
-var gulp = require("gulp");
-var $    = require( 'gulp-load-plugins' )();
+var gulp = require('gulp');
+var $    = require('gulp-load-plugins')();
 
 var packageJSON = require('./package.json');
 var BUNDLE_JS = packageJSON.name+'.js';
@@ -29,7 +29,7 @@ gulp.task('config:copy', function() {
     });
 });
 
-// Bundle js files (see package.json:"babel")
+// Bundle js files
 gulp.task('bundle:js', $.watchify(function(watchify) {
   var buffer = require('vinyl-buffer');
   return gulp.src([
