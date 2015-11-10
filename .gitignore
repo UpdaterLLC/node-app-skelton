@@ -1,5 +1,24 @@
+#
+# node-app-skelton
+#
+
+# dotfiles
 .*
 !.git*
+
+# build dependency
 node_modules
+
+# Logs
+logs
 *.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Some temporary
 *.tmp
+
+#__END__
