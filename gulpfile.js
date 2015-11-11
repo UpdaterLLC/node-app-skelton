@@ -39,7 +39,7 @@ gulp.task('bundle:js', $.watchify(function(watchify) {
     .pipe(watchify({
       basedir: './',
       watch: false,
-      debug: config.isProd,
+      debug: !config.isProd,
       detectGlobals: false,
       builtins: [],
       transform: [
